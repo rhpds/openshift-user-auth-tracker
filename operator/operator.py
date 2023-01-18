@@ -70,6 +70,7 @@ async def oauthaccesstoken_event(event, logger, **_):
             raise
 
     if not user.last_login or user.last_login < oauthaccesstoken.creation_timestamp:
+        logger.info(f"Updated last login for {user.name} to {oauthaccesstoken.creation_timestamp}")
         await user.merge_patch({
             "metadata": {
                 "annotations": {
