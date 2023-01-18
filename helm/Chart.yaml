@@ -1,0 +1,6 @@
+apiVersion: v2
+name: openshift-user-auth-tracker
+description: Utility to track user authentication and annotate user
+type: application
+version: 0.1.0
+appVersion: 0.1.0
