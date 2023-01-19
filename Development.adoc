@@ -28,7 +28,7 @@ helm template helm/ \
 oc project openshift-user-auth-tracker
 -----
 
-. Grant privileges for cluster role `user-group-operator` to default service account:
+. Grant privileges for cluster role `openshift-user-auth-tracker` to default service account:
 +
 --------------------------------------------------------------------------------
 oc adm policy add-cluster-role-to-user openshift-user-auth-tracker -z default

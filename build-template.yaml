@@ -3,8 +3,8 @@ apiVersion: template.openshift.io/v1
 kind: Template
 metadata:
   annotations:
-    description: user-group-operator deploy
-  name: user-group-operator-build
+    description: openshift-user-auth-tracker deploy
+  name: openshift-user-auth-tracker-build
 
 parameters:
 - name: KOPF_S2I_IMAGE
