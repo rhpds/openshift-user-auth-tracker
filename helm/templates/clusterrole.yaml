@@ -23,7 +23,6 @@ rules:
   - patch
 - apiGroups:
   - ""
-  attributeRestrictions: null
   resources:
   - events
   verbs:
